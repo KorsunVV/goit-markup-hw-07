@@ -1,0 +1,45 @@
+.footer {
+    background-color: var(--foot-color);
+    padding: 60px 15px;
+}
+
+.footer-conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .logo {
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer .logo span {
+    color: var(--bg-nav-color);
+}
+
+.footer .list {
+    font-style: normal;
+}
+
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer .list-text {
+    color: var(--bg-nav-color);
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.footer .info {
+    color: var(--contact-color);
+    font-size: 14px;
+    line-height: 1.71;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .info:hover, .footer .info:focus {
+    color: var(--accent-color);
+}
