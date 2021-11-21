@@ -1,13 +1,13 @@
 .quality-list {
     display: flex;
-}
 
-.quality-list .flex-element {
-    width: calc((100% - 90px) / 4);
-}
+    .flex-element {
+        width: calc((100% - 90px) / 4);
 
-.quality-list .flex-element:not(:last-child) {
-    margin-right: 30px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
 }
 
 .quality-title {
@@ -23,7 +23,7 @@
     line-height: 1.71;
 }
 
-.quality .quality-icon {
+.quality-icon {
     width: 70px;
     height: 70px;
 }

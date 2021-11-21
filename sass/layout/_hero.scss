@@ -9,12 +9,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    .container {
+        text-align: center;
+    }
 }
-
-.hero .container {
-    text-align: center;
-}
-
 .hero-title {
     font-weight: 900;
     text-transform: uppercase;

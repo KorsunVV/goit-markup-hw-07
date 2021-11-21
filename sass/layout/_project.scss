@@ -1,33 +1,44 @@
-.projects .filters {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
+.projects {
+    .filters {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
 
-.filters .flex-element {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(26 / 16);
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
+        .flex-element:not(:last-child) {
+            margin-right: 9px;
+        }
+    }
 
-.filters .flex-element:not(:last-child) {
-    margin-right: 9px;
-}
+    .list-project {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
 
+        .flex-element:hover .description-text {
+            transform: translateY(0);
+        }
+    }
 
-.projects .list-project {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-}
+    .section-title {
+        color: var(--title-text-color);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+    }
 
-.list-project .flex-element:hover .description-text {
-    transform: translateY(0);
+    .flex-element-project {
+        width: 370px;
+        margin: 15px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+
+        &:hover {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+    }
 }
 
 .project-top-wrap {
@@ -48,24 +59,6 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects .flex-element-project {
-    width: 370px;
-    margin: 15px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.flex-element-project:focus,
-.flex-element-project:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.projects .section-title {
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-}
-
 .info-project {
     padding: 20px 24px;
     border-right: 1px solid var(--border-color);
@@ -78,4 +71,3 @@
     font-size: 16px;
     line-height: 1.87;
 }
-
